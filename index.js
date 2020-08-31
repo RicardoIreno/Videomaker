@@ -5,7 +5,9 @@ const robots = {
 
 
 async function start() {
-    const content = {}
+    const content = {
+        maximumSentences: 7
+    }
 
     function askAndReturnSearchTerm() {
         return readline.question('Type a Wikpedia search term: ')
