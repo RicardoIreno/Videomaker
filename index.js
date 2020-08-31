@@ -1,22 +1,28 @@
 const readline = require( 'readline-sync' );
-
-function askAndReturnSearchTerm() {
-    return readline.question('Type a Wipedia search term, motherfucker: ')
+const robots = {
+    text: require('./robots/text.js')
 }
 
-function askAndReturnPrefix() {
-    const prefixes = [ 'Who is', 'What is', 'The history of']
-    const selectedPrefixIndex = readline.keyInSelect(prefixes, 'Choose one: ')
-    const selectedPrefixText = prefixes[selectedPrefixIndex]
-    return selectedPrefixText
-}
 
-function start() {
+async function start() {
     const content = {}
+
+    function askAndReturnSearchTerm() {
+        return readline.question('Type a Wikpedia search term: ')
+    }
+    
+    function askAndReturnPrefix() {
+        const prefixes = [ 'Who is', 'What is', 'The history of']
+        const selectedPrefixIndex = readline.keyInSelect(prefixes, 'Choose one: ')
+        const selectedPrefixText = prefixes[selectedPrefixIndex]
+        return selectedPrefixText
+    }
 
     content.searchTerm = askAndReturnSearchTerm()
     content.prefix = askAndReturnPrefix()    
-    console.log(content);
+
+    await robots.text(content)
+    
 }
 
 start()
