@@ -1,0 +1,12 @@
+{
+  "name": "Videomaker",
+  "version": "1.0.0",
+  "description": "Exercicio usando os videos do FelipeDeschamps",
+  "main": "index.js",
+  "repository": "git@github.com:RicardoIreno/Videomaker.git",
+  "author": "Ricardo Ireno <rilustra@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
