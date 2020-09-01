@@ -106,3 +106,7 @@ dist
 
 #credential
 credentials/*.json
+credentials/*.md
+
+#content
+content.json
