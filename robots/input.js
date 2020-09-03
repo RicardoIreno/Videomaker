@@ -2,6 +2,7 @@ const readline = require( 'readline-sync' )
 const state = require('./state.js')
 
 function robot() {
+    console.log('\n\n =============  input robot  =============')
     const content = {
         maximumSentences: 7
     }

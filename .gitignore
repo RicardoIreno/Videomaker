@@ -110,3 +110,7 @@ credentials/*.md
 
 #content
 content.json
+content/*.jpg *.png *.gif
+
+# test for learning files
+test.json
