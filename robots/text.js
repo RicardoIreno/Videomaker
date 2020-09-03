@@ -14,6 +14,7 @@ const nlu = new NaturalLanguageUnderstandingV1({
 const state = require('./state.js')
 
 async function robot() {
+   console.log('\n\n =============  text robot  =============')
    const content = state.load()
 
    await fetchContentFromWikipedia(content)
