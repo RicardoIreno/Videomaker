@@ -3,32 +3,30 @@ Criador de videos
 
 
 
-# Video Maker To-Do List
+## Video Maker To-Do List
 
-- [ ok ] **Espeficicar tarefas e escopo**
+- [ ] **Espeficicar tarefas e escopo**
 
-- [  ] **Orquestrador**
-- [ ok ] Perguntar pelo termo da busca
-- [ ok ] Perguntar pelo prefixo
-- [ ok ] iniciar o robô de texto
-- [ ok ] iniciar o robô de imagens
+- [ ] **Orquestrador**
+- [ ] Perguntar pelo termo da busca
+- [ ] Perguntar pelo prefixo
+- [ ] iniciar o robô de texto
+- [ ] iniciar o robô de imagens
 - [ ] iniciar o robô de vídeo
 - [ ] iniciar o robô do youtube
 
-
-- [ ok ] **Robô de texto**
-- [ ok ] Estruture de dados
-- [ ok ] pegar conteúdo do wikipedia
-- [ ok ] limpar o conteúdo
-- [ ok ] quebrar em sentenças
-- [ ok ] pegar a interpretação do watson
-- [ ok ] adicionar tags (o watson devolve)
-- [ ok ] salvar estrutura de dados
-
+- [ ] **Robô de texto**
+- [ ] Estruture de dados
+- [ ] pegar conteúdo do wikipedia
+- [ ] limpar o conteúdo
+- [ ] quebrar em sentenças
+- [ ] pegar a interpretação do watson
+- [ ] adicionar tags (o watson devolve)
+- [ ] salvar estrutura de dados
 
 - [ ] **robô de imagens**
-- [ ok ] carregar a estrutura de dados
-- [ ok ] buscar as imagens no goole 
+- [ ] carregar a estrutura de dados
+- [ ] buscar as imagens no goole 
 - [ ] baixar as imagens
 - [ ] salvar a estrutura de dados
 
@@ -38,11 +36,8 @@ Criador de videos
 - [ ] criar a thumbnail 
 - [ ] renderizar com after effects
 
-*é só o robô de video que precisa das imagens preparadas, então le que se vire
-
 - [ ] **robô do youtube**
 
 - [ ] autenticar com o OAuth
 - [ ] upload do vídeo
 - [ ] upload da thumb
-- [ ] 
