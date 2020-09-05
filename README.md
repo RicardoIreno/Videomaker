@@ -11,7 +11,7 @@ Pesquisa de imagens feita usando a Api Google Custom Search
 
 
 
-Este projeto está sendo desenvolvido seguindo os videos do [Filipe Deschamps](https://github.com/filipedeschamps).
+**Este projeto está sendo desenvolvido seguindo os videos do [Filipe Deschamps](https://github.com/filipedeschamps).**
 
 Você pode conferir o repositório do projeto original [aqui](https://github.com/filipedeschamps/video-maker).
 
@@ -27,6 +27,7 @@ Você pode conferir o repositório do projeto original [aqui](https://github.com
 
 ### Anotações
 
+```javascript
 content: {
     searchTerm: "...",
     prefix: "...",
@@ -38,3 +39,4 @@ content: {
         images: ["..."]
     ]
 }
+```
