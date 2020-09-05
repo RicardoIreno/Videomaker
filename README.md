@@ -1,43 +1,40 @@
 # Videomaker
-Criador de videos
+
+Robô que cria videos a partir de um termo fornecido pelo usuário. Ele procura um termo no Wikipedia através do algoritmo Wikipedia Response disponível na plataforma [Algorthimia](https://algorithmia.com/).
+
+O conteúdo é sanitizado com a ajuda da biblioteca [Sentence Boundary Detection](https://www.npmjs.com/package/sbd).
+
+A analise do texto foi feita usando a Api do Watson [Natural Language Understanding](https://natural-language-understanding-demo.ng.bluemix.net), a qual acessamos usand o módulo [Watson Developer Cloud](https://www.npmjs.com/package/watson-developer-cloud).
+
+Pesquisa de imagens feita usando a Api Google Custom Search 
 
 
 
-## Video Maker To-Do List
 
-- [ ] **Espeficicar tarefas e escopo**
+Este projeto está sendo desenvolvido seguindo os videos do [Filipe Deschamps](https://github.com/filipedeschamps).
 
-- [ ] **Orquestrador**
-- [ ] Perguntar pelo termo da busca
-- [ ] Perguntar pelo prefixo
-- [ ] iniciar o robô de texto
-- [ ] iniciar o robô de imagens
-- [ ] iniciar o robô de vídeo
-- [ ] iniciar o robô do youtube
+Você pode conferir o repositório do projeto original [aqui](https://github.com/filipedeschamps/video-maker).
 
-- [ ] **Robô de texto**
-- [ ] Estruture de dados
-- [ ] pegar conteúdo do wikipedia
-- [ ] limpar o conteúdo
-- [ ] quebrar em sentenças
-- [ ] pegar a interpretação do watson
-- [ ] adicionar tags (o watson devolve)
-- [ ] salvar estrutura de dados
 
-- [ ] **robô de imagens**
-- [ ] carregar a estrutura de dados
-- [ ] buscar as imagens no goole 
-- [ ] baixar as imagens
-- [ ] salvar a estrutura de dados
 
-- [ ] **robô de vídeo**
-- [ ] preparar/redimensionar as imagens 
-- [ ] criar as sentenças com imagens
-- [ ] criar a thumbnail 
-- [ ] renderizar com after effects
 
-- [ ] **robô do youtube**
+### Outros módulos usados:
 
-- [ ] autenticar com o OAuth
-- [ ] upload do vídeo
-- [ ] upload da thumb
++ [Google APIs Node.js Client](https://www.npmjs.com/package/googleapis)
++ [Image Downloader](https://www.npmjs.com/package/image-downloader)
+
+
+
+### Anotações
+
+content: {
+    searchTerm: "...",
+    prefix: "...",
+    sourceContentOriginal: "...",
+    sourceContentSanitized: "...",
+    sentences: [
+        text: "...",
+        keywords: ["..."],
+        images: ["..."]
+    ]
+}
